@@ -6,7 +6,7 @@ def part_1():
         nums = re.findall(r"[1-9]", line)
         num = int(nums[0]) * 10 + int(nums[-1])
         return num
-    with open("aoc_day_1.txt", "r") as f:
+    with open("day_1.txt", "r") as f:
         for line in f:
             sum1 += extract_1(line)
     print(sum1)
@@ -20,7 +20,7 @@ def part_2():
         last = int(stuff[-1]) if stuff[-1].isnumeric() else ref[stuff[-1]]
         return first * 10 + last
     sum2 = 0
-    with open("aoc_day_1.txt", "r") as f:
+    with open("day_1.txt", "r") as f:
         for line in f:
             sum2 += extract_2(line)
     print(sum2)
