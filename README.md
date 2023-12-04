@@ -15,4 +15,5 @@ These solutions are definitely not the most efficient, but I try to make them as
 
 
 # Analysis of Times and Completion
-![](stat_of_the_day?raw=true)
+![](stat_of_the_day.png?raw=true)
+
