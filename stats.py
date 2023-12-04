@@ -46,6 +46,5 @@ ax[1].legend(fontsize="small")
 ax[1].grid(visible=True, which="major", axis="y")
 ax[1].set_xticks(days)
 
+plt.savefig("stat_of_the_day.png", format="png")
 plt.show()
-
-plt.savefig("stat_of_the_day.png")
