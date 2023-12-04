@@ -48,4 +48,4 @@ ax[1].set_xticks(days)
 
 plt.show()
 
-plt.savefig("stat_of_the_day", format="png")
+plt.savefig("stat_of_the_day.png")
