@@ -10,7 +10,7 @@ Huge thanks to the creator of AOC annually, [Eric Wastl](http://was.tl/)
 [View the AOC 2023 page here](https://adventofcode.com/2023/about)
 
 # Days, Descriptions and Comments
-1. Trebuchet? (<span style="color:gold">2/2</span> stars)
+1. Trebuchet? (<span style="color:Gold">2/2</span> stars)
     * Part 1: Given a chunk of alphanumeric text, add up the first and last digits spelt out (1 = "one", etc) that appear in each line for all lines
     * Part 2: Now re-do Part 1 but include any actual numerics as well (1 could be "1" or "one", etc)
     * This was a particularly difficult day 1 from what I heard in my university discord, which I agree. I expected it to be trivial but it ended up costing me 2 hours...
