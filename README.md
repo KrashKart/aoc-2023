@@ -5,7 +5,7 @@ These solutions are definitely not the most efficient, but I try to make them as
 
 # Days and Reflections
 1. Trebuchet?
-    *hehe
+    * yes
 2. Cube Conundrum
     *.
 3. Gear Ratios
@@ -15,5 +15,5 @@ These solutions are definitely not the most efficient, but I try to make them as
 
 
 # Analysis of Times and Completion
-
+![](stat_of_the_day.png?raw=true)
 
