@@ -18,6 +18,8 @@ Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
     * This was a horrible problem for me, because it seemed so tedious. I eventually opted to store each character in an n x n array, recording the indices of the groups of numbers and symbols that were not ".", and traversed the entire n x n array
 4. Scratchcards (2/2 stars)
     * Very manageable actually. Solved this one quite quickly due to me being used to regex. I opted for a "bottom-up" style of dynamic programming in Part 2 which if not for a careless mistake, could've been my first sub-20 minute submission.
+5. If You Give A Seed A Fertilizer (2/2 stars)
+    * I must say the problem gave me quite a headache, but it did teach me the principles of logical thinking and analysis. It sounds weird, but my approach was a more mathematical and logical one as compared to my initial idea which was brute-forcing. Although the code is bulky and unoptimised, I'm quite proud of it anyway.
 
 # Analysis of Times and Completion
 ![](stats/stat_of_the_day.png?raw=true)
