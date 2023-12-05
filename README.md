@@ -9,24 +9,15 @@ Huge thanks to the creator of AOC annually, [Eric Wastl](http://was.tl/)
 
 [View the AOC 2023 page here](https://adventofcode.com/2023/about)
 
-# Days, Descriptions and Comments
+# Days and Comments
 1. Trebuchet? (2/2 stars)
-    * Part 1: Given a chunk of alphanumeric text, add up the first and last digits spelt out (1 = "one", etc) that appear in each line for all lines
-    * Part 2: Now re-do Part 1 but include any actual numerics as well (1 could be "1" or "one", etc)
     * This was a particularly difficult day 1 from what I heard in my university discord, which I agree. I expected it to be trivial but it ended up costing me 2 hours...
 2. Cube Conundrum (2/2 stars)
-    * Part 1: Given a chunk of games (1 game per line) and their IDs involving the amount of red, green and blue balls drawn over multiple turns, figure out the sum of the possible game IDs given limited balls.
-    * Part 2: Given the same text, figure out the product of the minimum numbers of red, blue and green balls needed for each game to be possible per line (the power set of the number of balls)
-    * This was manageable, but my string processing was quite weak so fumbled on the regex
+    * This was manageable, but my string processing was quite weak so fumbled on the regex considerably.
 3. Gear Ratios (2/2 stars)
-    * Part 1: Given a chunk of numbers and symbols separated by one or more "."s, find the sum of the numbers adjacent to any symbol that is not a "."
-    * Part 2: Using the same text, find the sum of the product of two numbers adjacent to those gears. The gears must be adjacent to 2 and only 2 gears to be included in the sum.
     * This was a horrible problem for me, because it seemed so tedious. I eventually opted to store each character in an n x n array, recording the indices of the groups of numbers and symbols that were not ".", and traversed the entire n x n array
 4. Scratchcards (2/2 stars)
-    * Part 1: Given scratchcards with winning numbers and numbers you have (both unique for each card), find the number of points total given n matching numbers yields 2 ^ n points unless there is no match, which yields 0 points
-    * Part 2: Given the same text, find the total number of scratchcards you have in the end given n matching numbers on scratchcard q rewards you with copies of scratchcards q + 1, ..., q + n if n is not 0
-    * Very manageable actually. Solved this one quite quickly due to me being used to regex. I opted for a "bottom-up" style of dynamic programming in Part 2
-
+    * Very manageable actually. Solved this one quite quickly due to me being used to regex. I opted for a "bottom-up" style of dynamic programming in Part 2 which if not for a careless mistake, could've been my first sub-20 minute submission.
 
 # Analysis of Times and Completion
 ![](stats/stat_of_the_day.png?raw=true)
