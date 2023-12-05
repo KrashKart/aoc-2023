@@ -5,7 +5,7 @@ For those unfamiliar, AOC an Advent of Code, where in the style of an advent cal
 
 I chose to do my coding in Python 3.11. These solutions are definitely not the most efficient, but I try to make them as short and concise as possible.
 
-Huge thanks to the creator of AOC annually, [Eric Wastl](http://was.tl/)
+Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
 
 [View the AOC 2023 page here](https://adventofcode.com/2023/about)
 
