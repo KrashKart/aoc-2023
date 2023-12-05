@@ -55,12 +55,11 @@ def part_2():
     
     seeds = rows["seeds"]
     while counter < len(labels):
-        print(seeds)
         for idx, item in enumerate(seeds):
             start = item[0]
             rang = item[1]
             for (dest, src, ran) in rows[labels[counter]]:
-                if start >= src + ran or start + rang < src:
+                if start >= src + ran or start + ran < src:
                     continue
                 else:
                     if rang == 0:
@@ -85,9 +84,8 @@ def part_2():
                     break
         counter += 1
     final = list(map(lambda x: x[0], seeds))
-    # print(final)
     print(min(final))
 
 if __name__ == "__main__":
-    # part_1()
+    part_1()
     part_2()
