@@ -31,7 +31,7 @@ Y_MIN = 0
 Y_MAX_0 = max(totals_adds)
 Y_MAX_1 = max(two_times)
 
-fig, ax = plt.subplots(1, 2, figsize=(16, 6))
+fig, ax = plt.subplots(2, 1, figsize=(10, 15))
 ax[0].plot(days, one_rank, "bo-", label="Part 1")
 ax[0].plot(days, two_rank, "ro-", label="Part 2")
 ax[0].plot(days, two_stars_tots, "g^--", label="Completion of Both Parts (Globally)")
