@@ -9,7 +9,7 @@ Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
 
 [View the AOC 2023 page here](https://adventofcode.com/2023/about)
 
-# Days and Comments
+# Days and Reflections
 1. Trebuchet? (2/2 stars)
     * This was a particularly difficult day 1 from what I heard in my university discord, which I agree. I expected it to be trivial but it ended up costing me 2 hours...
 2. Cube Conundrum (2/2 stars)
@@ -20,6 +20,8 @@ Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
     * Very manageable actually. Solved this one quite quickly due to me being used to regex. I opted for a "bottom-up" style of dynamic programming in Part 2 which if not for a careless mistake, could've been my first sub-20 minute submission.
 5. If You Give A Seed A Fertilizer (2/2 stars)
     * I must say the problem gave me quite a headache, but it did teach me the principles of logical thinking and analysis. It sounds weird, but my approach was a more mathematical and logical one as compared to my initial idea which was brute-forcing. Although the code is bulky and unoptimised, I'm quite proud of it anyway.
+6. Wait For It (2/2 stars)
+    * A particularly easy day, even easier than day 4. The input text was not lengthy at all, so any tricky edge cases were not included. I chose to brute force search my way through.
 
 # Analysis of Times and Completion
 ![](stats/stat_of_the_day.png?raw=true)

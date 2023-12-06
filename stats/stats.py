@@ -1,14 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-one_rank = [14101, 25010, 11831, 6816, 32645]               # rank for part 1
-two_rank = [11613, 24146, 10693, 7384, 16922]               # rank for part 2
-two_stars_tot = [154354, 120716, 72083, 36771, 16942]       # number of people that completed both parts
-add = [50180, 5364, 11757, 10872, 19277]                    # number of people that completed part 1 only
+one_rank = [14101, 25010, 11831, 6816, 32645, 7344]               # rank for part 1
+two_rank = [11613, 24146, 10693, 7384, 16922, 5753]               # rank for part 2
+two_stars_tot = [176441, 144108, 92084, 87971, 41786, 7905]       # number of people that completed both parts
+add = [56863, 6446, 13896, 12127, 25195, 1762]                    # number of people that completed part 1 only
 anomalies = [2, 5]                                          # days where I did not start on time
 
-one_time = [(1,6,6), (3,44,38), (1,59,16), (0,18,0), (7,22,24)]        # time taken for part 1 in (hrs, mins, secs)
-two_time = [(2,3,32), (4,0,37), (2,34,4), (0,46,44), (8,38,27)]        # time taken for part 2 in (hrs, mins, secs)
+one_time = [(1,6,6), (3,44,38), (1,59,16), (0,18,0), (7,22,24), (0,22,7)]        # time taken for part 1 in (hrs, mins, secs)
+two_time = [(2,3,32), (4,0,37), (2,34,4), (0,46,44), (8,38,27), (0,24,7)]        # time taken for part 2 in (hrs, mins, secs)
 i = len(one_rank) + 1
 
 def convert_to_mins(tup):
