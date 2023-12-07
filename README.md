@@ -22,6 +22,8 @@ Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
     * I must say the problem gave me quite a headache, but it did teach me the principles of logical thinking and analysis. It sounds weird, but my approach was a more mathematical and logical one as compared to my initial idea which was brute-forcing. Although the code is bulky and unoptimised, I'm quite proud of it anyway.
 6. Wait For It (2/2 stars)
     * A particularly easy day, even easier than day 4. The input text was not lengthy at all, so any tricky edge cases were not included. I chose to brute force search my way through.
+7. Camel Cards (2/2 stars)
+    * A fantastic problem of ranking poker combinations. I did not use regex and instead opted for the Collections module as suggested in my university Discord. It was my first time using the Collections module. I must disclose that I knew about the problem before I opened it (but after the leaderboard was already filled) thus my completion times were quite sus.
 
 # Analysis of Times and Completion
 ![](stats/stat_of_the_day.png?raw=true)
