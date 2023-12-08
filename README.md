@@ -24,6 +24,8 @@ Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
     * A particularly easy day, even easier than day 4. The input text was not lengthy at all, so any tricky edge cases were not included. I chose to brute force search my way through.
 7. Camel Cards (2/2 stars)
     * A fantastic problem of ranking poker combinations. I did not use regex and instead opted for the Collections module as suggested in my university Discord. It was my first time using the Collections module. I must disclose that I knew about the problem before I opened it (but after the leaderboard was already filled) thus my completion times were quite sus.
+8. Haunted Wasteland (2/2 stars)
+    * I was undaunted initially because I had solved several node-pathfinding problems on LeetCode before, thus part 1 didn't require too much thinking. For part 2, I messed up my order of execution of functions, and coupled with my initial idea to brute force (which did not work due to the large magnitude of the answer), caused a delay in solving part 2. I managed to figure out an alternative, faster solution in the form of the lcm function in the math module.
 
 # Analysis of Times and Completion
 ![](stats/stat_of_the_day.png?raw=true)
