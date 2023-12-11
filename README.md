@@ -36,6 +36,9 @@ Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
 10. Pipe Maze (2/2 stars technically)
     * Part 1 was alright, I made a few logical errors which significantly delayed my score but I was able to solve it using a simple traversal. Part 2 on the other hand was simply too difficult. I had the right idea of counting the parity of the turns and straights to the left of any non-loop elements, but somehow my answer was off by 10. I resorted to searching for solutions in the reddit, so technically I have the 2nd star although I did not finish part 2.
     * Also my mathematical thinking and graph theory were too weak, so I did not consider Hamiltonian circuits or some other theorem that I don't know of.
+11. Cosmic Expansion (2/2 stars)
+    * I misread the question so I thought it was harder than it really was, but it was a relatively simple problem which I managed to figure out quickly once I ironed out implementation mistakes. I've been starting to think more mathematically rather than brute-forcing-ly so I guess that is good too.
+    * Also, AOC has been training me to use itertools and other libraries in Python more often, which I really appreciate.
 
 # Analysis of Times and Completion
 From Day 9 onwards, all timings are recorded from when I opened the problem set, not when the problem set is released. I will still indicate if I start late or did not finish as per normal

@@ -1,15 +1,29 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-one_rank = [14_101, 25_010, 11_831, 6_816, 32_645, 7_344, 15_939, 12_729, 48_507, 6_895]                           # rank for part 1
-two_rank = [11_613, 24_146, 10_693, 7_384, 16_922, 5_753, 11_968, 8_778, 47_813, 3_266]                           # rank for part 2
-two_stars_tot = [197_788, 165_384, 108_409, 106_732, 64_088, 81_050, 62_077, 53_025, 48_334, 3_774]                  # number of people that completed both parts
-add = [62_747, 7_482, 16_174, 14_209, 25_353, 1_317, 5_597, 11_353, 740, 5_781]                                 # number of people that completed part 1 only
-anomalies = [2, 5, 7, 8, 9]                                                                            # days where I did not start on time
-DNF_2 = [10]       
+# rank for part 1
+one_rank = [14_101, 25_010, 11_831, 6_816, 32_645, 7_344, 15_939, 12_729, 48_507, 6_895, 22_213]
 
-one_time = [(1,6,6), (3,44,38), (1,59,16), (0,18,0), (7,22,24), (0,22,7), (3,8,21), (1,18,15), (0,19,0), (1,41,34)]        # time taken for part 1 in (hrs, mins, secs)
-two_time = [(2,3,32), (4,0,37), (2,34,4), (0,46,44), (8,38,27), (0,24,7), (3,8,29), (1,59,59), (0,35,0), (2,26,53)]        # time taken for part 2 in (hrs, mins, secs)
+# rank for part 2                
+two_rank = [11_613, 24_146, 10_693, 7_384, 16_922, 5_753, 11_968, 8_778, 47_813, 3_266, 24_483]
+
+# number of people that completed both parts
+two_stars_tot = [201_569, 169_215, 111_387, 110_134, 66_694, 84_603, 65_640, 57_612, 56_437, 30_343, 22_283]
+
+# number of people that completed part 1 only
+add = [63_784, 7_621, 16_568, 14_559, 25_962, 1_378, 5_772, 11_638, 797, 14_301, 2_416]
+
+# days where I did not start on time
+anomalies = [2, 5, 7, 8, 9, 11]
+
+# days where I did not finish
+DNF_2 = [10]
+
+# time taken for part 1 in (hrs, mins, secs)
+one_time = [(1,6,6), (3,44,38), (1,59,16), (0,18,0), (7,22,24), (0,22,7), (3,8,21), (1,18,15), (0,19,0), (1,41,34), (1,15,0)]       
+
+# time taken for part 2 in (hrs, mins, secs)
+two_time = [(2,3,32), (4,0,37), (2,34,4), (0,46,44), (8,38,27), (0,24,7), (3,8,29), (1,59,59), (0,35,0), (2,26,53), (1,50,0)]        
 i = len(one_rank) + 1
 
 def convert_to_mins(tup):
