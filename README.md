@@ -39,6 +39,8 @@ Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
 11. Cosmic Expansion (2/2 stars)
     * I misread the question so I thought it was harder than it really was, but it was a relatively simple problem which I managed to figure out quickly once I ironed out implementation mistakes. I've been starting to think more mathematically rather than brute-forcing-ly so I guess that is good too.
     * Also, AOC has been training me to use itertools and other libraries in Python more often, which I really appreciate.
+12. Hot Springs (2/2 stars)
+    * An interesting Dynamic Programming problem. This introduced me to the @cache decorator in functools and how to memoize in Python. I only understood how to do this after reading a hint on the reddit, but nonetheless quite proud of my solution (although it could be better)
 
 # Analysis of Times and Completion
 From Day 9 onwards, all timings are recorded from when I opened the problem set, not when the problem set is released. I will still indicate if I start late or did not finish as per normal
