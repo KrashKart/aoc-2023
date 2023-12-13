@@ -41,6 +41,9 @@ Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
     * Also, AOC has been training me to use itertools and other libraries in Python more often, which I really appreciate.
 12. Hot Springs (2/2 stars)
     * An interesting Dynamic Programming problem. This introduced me to the @cache decorator in functools and how to memoize in Python. I only understood how to do this after reading a hint on the reddit, but nonetheless quite proud of my solution (although it could be better)
+13. Point of Incidence (2/2 stars)
+    * I was stuck initially because I tried to use maths to figure out the middle, but I realised that I could just try every line between each row to see which one the middle was.
+    * Part 2 was simply to refactor my check_height() function to account for smidges, which did not take long.
 
 # Analysis of Times and Completion
 From Day 9 onwards, all timings are recorded from when I opened the problem set, not when the problem set is released. I will still indicate if I start late or did not finish as per normal
