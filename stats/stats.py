@@ -18,7 +18,7 @@ add = [65_649, 7_964, 17_066, 15_240, 26_859, 1_442, 6_050,
        12_142, 855, 14_231, 1_880, 13_076, 3_609]
 
 # days where I did not start on time
-anomalies = [2, 5, 7, 8, 9, 11, 12]
+anomalies = [2, 5, 7, 8, 9, 11, 12, 13]
 
 # days where I did not finish
 DNF_2 = [10]
