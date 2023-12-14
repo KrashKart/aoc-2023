@@ -44,6 +44,8 @@ Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
 13. Point of Incidence (2/2 stars)
     * I was stuck initially because I tried to use maths to figure out the middle, but I realised that I could just try every line between each row to see which one the middle was.
     * Part 2 was simply to refactor my check_height() function to account for smidges, which did not take long.
+14. Parabolic Reflector Dish (2/2 stars)
+    * A rather simple problem. As usual I had several off-by-one errors but managed to complete it within the 90 minute mark. I appreciated the subtle twist in the cycle detection algorithm required in part 2 as I didn't realise a cycle could occur until I got a hint from the Discord. I realised too that rather than implementing the hare and tortoise traversal algorithm I could just generate the spins and check if it had occured before, and take that as the start of the loop.
 
 # Analysis of Times and Completion
 From Day 9 onwards, all timings are recorded from when I opened the problem set, not when the problem set is released. I will still indicate if I start late or did not finish as per normal
