@@ -46,6 +46,8 @@ Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
     * Part 2 was simply to refactor my check_height() function to account for smidges, which did not take long.
 14. Parabolic Reflector Dish (2/2 stars)
     * A rather simple problem. As usual I had several off-by-one errors but managed to complete it within the 90 minute mark. I appreciated the subtle twist in the cycle detection algorithm required in part 2 as I didn't realise a cycle could occur until I got a hint from the Discord. I realised too that rather than implementing the hare and tortoise traversal algorithm I could just generate the spins and check if it had occured before, and take that as the start of the loop.
+15. Lens Library (2/2 stars)
+    * Another simple problem (thank you Eric). An interesting introduction to simple hashing algorithms (reminiscent of SHA256). Beyond that it was more a reading problem (skill issue on my part tbh) than a coding problem. Possibly my very first every sub 30 minute submission. Next time I'll try for sub-20!!
 
 # Analysis of Times and Completion
 From Day 9 onwards, all timings are recorded from when I opened the problem set, not when the problem set is released. I will still indicate if I start late or did not finish as per normal
