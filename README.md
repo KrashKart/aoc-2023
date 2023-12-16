@@ -48,6 +48,8 @@ Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
     * A rather simple problem. As usual I had several off-by-one errors but managed to complete it within the 90 minute mark. I appreciated the subtle twist in the cycle detection algorithm required in part 2 as I didn't realise a cycle could occur until I got a hint from the Discord. I realised too that rather than implementing the hare and tortoise traversal algorithm I could just generate the spins and check if it had occured before, and take that as the start of the loop.
 15. Lens Library (2/2 stars)
     * Another simple problem (thank you Eric). An interesting introduction to simple hashing algorithms (reminiscent of SHA256). Beyond that it was more a reading problem (skill issue on my part tbh) than a coding problem. Possibly my very first every sub 30 minute submission. Next time I'll try for sub-20!!
+16. The Floor Will Be Lava (2/2 stars)
+    * This was slightly harder for me since I was tired and my maze traversal isn't very strong. Started off (yet again) with one-off errors in part 1 and had to implement a queue, but part 2 was ok except the running time was very very bad. I suspect this was due to the way I handled the traversal for each starting point, but honestly I'm just glad to have survived another maze puzzle.
 
 # Analysis of Times and Completion
 From Day 9 onwards, all timings are recorded from when I opened the problem set, not when the problem set is released. I will still indicate if I start late or did not finish as per normal
