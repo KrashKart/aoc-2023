@@ -53,6 +53,7 @@ Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
 17. Clumsy Crucible (2/2 stars)
     * This was a tricky puzzle. I was trying to use DFS until I read a hint on reddit that it was more a Dijkstra problem. I will have to work on my search algorithms, but using (heavy) inspiration from u/xelt on reddit I managed to implement the algorithm using a heap-queue for speed. I don't consider this solved by me since I needed heavy help, but 2 stars is 2 stars nonetheless.
     * Also, I decided to try out the new navigation system reddit recommended in the form of dx and dy, but using a "turn-only" approach to this problem was entirely u/xelt's idea.
+    * I additionally learnt my lesson from day 16 and kept track of both the direction and coordinates instead of just the latter to avoid loops and speed up the code.
 
 # Analysis of Times and Completion
 From Day 9 onwards, all timings are recorded from when I opened the problem set, not when the problem set is released. I will still indicate if I start late or did not finish as per normal
