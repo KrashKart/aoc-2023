@@ -50,6 +50,9 @@ Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
     * Another simple problem (thank you Eric). An interesting introduction to simple hashing algorithms (reminiscent of SHA256). Beyond that it was more a reading problem (skill issue on my part tbh) than a coding problem. Possibly my very first every sub 30 minute submission. Next time I'll try for sub-20!!
 16. The Floor Will Be Lava (2/2 stars)
     * This was slightly harder for me since I was tired and my maze traversal isn't very strong. Started off (yet again) with one-off errors in part 1 and had to implement a queue, but part 2 was ok except the running time was very very bad. I suspect this was due to the way I handled the traversal for each starting point, but honestly I'm just glad to have survived another maze puzzle.
+17. Clumsy Crucible (2/2 stars)
+    * This was a tricky puzzle. I was trying to use DFS until I read a hint on reddit that it was more a Dijkstra problem. I will have to work on my search algorithms, but using (heavy) inspiration from u/xelt on reddit I managed to implement the algorithm using a heap-queue for speed. I don't consider this solved by me since I needed heavy help, but 2 stars is 2 stars nonetheless.
+    * Also, I decided to try out the new navigation system reddit recommended in the form of dx and dy, but using a "turn-only" approach to this problem was entirely u/xelt's idea.
 
 # Analysis of Times and Completion
 From Day 9 onwards, all timings are recorded from when I opened the problem set, not when the problem set is released. I will still indicate if I start late or did not finish as per normal
