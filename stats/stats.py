@@ -1,41 +1,36 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# rank for part 1
-one_rank = [14_101, 25_010, 11_831, 6_816, 32_645, 7_344, 15_939, 
-            12_729, 48_507, 6_895, 22_213, 10_237, 8_741, 17_734,
-            2_242, 11_047, 5_789]
+# parser for ranktimes
+one_rank, one_time, two_rank, two_time = [], [], [], []
+with open("ranktimes.txt", "r") as f:
+    for line in f:
+        line = line.strip().split(" ")
+        _, oT, oR, _, tT, tR, _ = list(filter(lambda x: x, line))
+        one_rank.append(int(oR))
+        two_rank.append(int(tR))
+        oh, om, os = oT.strip().split(":")
+        th, tm, ts = tT.strip().split(":")
+        one_time.append((int(oh), int(om), int(os)))
+        two_time.append((int(th), int(tm), int(ts)))
 
-# rank for part 2                
-two_rank = [11_613, 24_146, 10_693, 7_384, 16_922, 5_753, 11_968, 
-            8_778, 47_813, 3_266, 24_483, 3_930, 6_520, 11_457,
-            1_790, 10_814, 4_946]
-
-# number of people that completed both parts
-two_stars_tot = [214_231, 180_914, 119_630, 119_009, 72_778, 93_262, 73_343,
-                 65_852, 67_092, 41_624, 49_194, 25_077, 31_092, 28_905,
-                 31_663, 24_175, 5_266]
-
-# number of people that completed part 1 only
-add = [68_169, 8_398, 17_936, 15_950, 28_137, 1_546, 6_452,
-       12_947, 971, 15_086, 2_008, 13_061, 4_394, 6_191,
-       3_452, 942, 897]
+# parser for tots
+two_stars_tots = []
+add = []
+with open("tots.txt", "r") as f:
+    for line in f:
+        line = line.strip().split(" ")
+        _, t, a, _ = list(filter(lambda x: x, line))
+        two_stars_tots.append(int(t))
+        add.append(int(a))
+two_stars_tots.reverse()
+add.reverse()
 
 # days where I did not start on time
 anomalies = [2, 5, 7, 8, 9, 11, 12, 13, 14, 16, 17]
 
 # days where I did not finish
 DNF_2 = [10]
-
-# time taken for part 1 in (hrs, mins, secs)
-one_time = [(1,6,6), (3,44,38), (1,59,16), (0,18,0), (7,22,24), (0,22,7), (3,8,21), 
-            (1,18,15), (0,19,0), (1,41,34), (1,15,0), (1,15,59), (0,47,0), (0,45,0),
-            (0,6,54), (1,15,0), (1,30,0)]   
-
-# time taken for part 2 in (hrs, mins, secs)
-two_time = [(2,3,32), (4,0,37), (2,34,4), (0,46,44), (8,38,27), (0,24,7), (3,8,29), 
-            (1,59,59), (0,35,0), (2,26,53), (1,50,0), (1,27,13), (1,1,7), (1,31,45),
-            (0,27,5), (2,0,0), (2,0,0)]
    
 i = len(one_rank) + 1
 
@@ -50,7 +45,7 @@ one_ranks = np.array(one_rank, dtype=int)
 two_ranks = np.array(two_rank, dtype=int)
 one_times = np.array(one_time)
 two_times = np.array(two_time)
-two_stars_tots = np.array(two_stars_tot, dtype=int)
+two_stars_tots = np.array(two_stars_tots, dtype=int)
 totals_adds = two_stars_tots + np.array(add, dtype=int)
 anoms = np.array(anomalies, dtype=int)
 days = np.arange(start=1, stop=i, dtype=int)
@@ -60,7 +55,7 @@ Y_MIN = 0
 Y_MAX_0 = max(totals_adds)
 Y_MAX_1 = max(two_times)
 
-fig, ax = plt.subplots(2, 1, figsize=(10, 15))
+fig, ax = plt.subplots(2, 1, figsize=(15, 10))
 ax[0].plot(days, one_rank, "bo-", label="Part 1")
 ax[0].plot(days, two_rank, "ro-", label="Part 2")
 ax[0].plot(days, two_stars_tots, "g^--", label="Completion of Both Parts (Globally)")
