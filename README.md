@@ -59,8 +59,10 @@ Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
     * I then remembered the PTSD from day 10, so I decided to read up on the Shoelace Formula and Pick's Theorem. Turns out it was quite trivial and I could easily solve both parts after some hiccups with the hexadecimal conversions and worries about off-by-one (then I realised the question essentially mitigated all off-by-one errors, so I had nothing to worry about).
     * I essentially used the di, dj method from reddit I learnt yesterday to traverse the directions, counted edges and noted vertices, and used the Shoelace Formula to calculate internal vertices. Then, I had an off-by-two result after Pick's Theorem (internal + edges / 2 - 1) so I added 2 and got the answers for both parts. I had no idea why until...
     * [Someone on reddit](https://www.reddit.com/r/adventofcode/comments/18l0qtr/comment/kdv2206/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) said that due to external corners contributing 0.25m^2 more than normal edge pieces (which Pick's Theorem accounts for) and internal corners contributing 0.25m^2 less than normal edge pieces, the fact that there are exactly 4 more outside corners than inside corners means an additional 1m^2 has to be accounted for (which Pick's Theorem does not)
+19. [Aplenty](https://adventofcode.com/2023/day/19) (2/2 stars)
+    * Another blasted interval problem (PTSD from day 5 frfr). I was so stumped by part 2 that I spent 2 hours on it. Thankfully I managed to find a solution using bottom-up DP, which I'm still not very good at implementing or recognising when I need to use it.
+    * I decided to use classes to represent the workflow, hoping that it would be easier. Instead I think I overdid it and spent quite a bit of time implementing it, but it was definitely fun.
 
 # Analysis of Times and Completion
-
 ![](stats/stat_of_the_day.png?raw=true)
 
