@@ -4,7 +4,7 @@ Hello, welcome to my AOC 2023 repo, where I post my solutions, problem data and 
 # What is AOC?
 For those unfamiliar, AOC is the Advent of Code, where in the style of an advent calendar, code challenges are released everyday at 1pm Singapore Time (midnight EST or UTC-5). A problem description and problem data (in the form of text) will be given, and the solution must be entered below the problem description. 
 
-There are 2 tiers of problems per day, Part 1 and Part 2, which is a harder extension of Part 1 and unlocks only after completion of Part 1. Any wrong answer will come with a 1 minute wait time (which increases after a certain amount of wrong answers) before an answer can be submitted, along with a hint whether the answer is too high or low. 
+There are 2 tiers of problems per day, Part 1 and Part 2, which is a harder extension of Part 1 and unlocks only after completion of Part 1. Any wrong answer will come with a 1 minute wait time (which increases after a certain amount of wrong answers) before an answer can be submitted, along with a hint on whether the answer is too high or low. 
 
 Completion of Part 1 yields 1 star (silver), and that of both parts yields 2 (gold). There are no restrictions on programming languages, and the time taken since the release of the problem set will be used in the global leaderboard and any private leaderboards you are registered in.
 
