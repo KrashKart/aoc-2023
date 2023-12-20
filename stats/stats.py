@@ -29,7 +29,7 @@ for ls in [one_rank, one_time, two_rank, two_time, two_stars_tots, add]:
     ls.reverse()
 
 # days where I did not start on time
-anomalies = [2, 5, 7, 8, 9, 11, 12, 13, 14, 16, 17, 19]
+anomalies = [2, 5, 7, 8, 9, 11, 12, 13, 14, 16, 17, 19, 20]
 
 # days where I did not finish
 DNF_2 = [10]

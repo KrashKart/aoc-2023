@@ -62,6 +62,9 @@ Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
 19. [Aplenty](https://adventofcode.com/2023/day/19) (2/2 stars)
     * Another blasted interval problem (PTSD from day 5 frfr). I was so stumped by part 2 that I spent 2 hours on it. Thankfully I managed to find a solution using bottom-up DP, which I'm still not very good at implementing or recognising when I need to use it.
     * I decided to use classes to represent the workflow, hoping that it would be easier. Instead I think I overdid it and spent quite a bit of time implementing it, but it was definitely fun.
+20. [Pulse Propagation](https://adventofcode.com/2023/day/20) (2/2 stars)
+    * Another fun exercise in classes in Python and an interesting primer to electronic circuits. I chose to manually propagate the signals, which worked better than expected and I got part 1 first try.
+    * I tried to brute force part 2 but failed, then I saw a circuit diagram someone posted on the Discord, which gave me the idea to check the modules leading up to the conjunction before rx. Since the conjunction requires all inputs to itself to be high to send a low signal to rx, I checked the periods of each module and took the LCM.
 
 # Analysis of Times and Completion
 ![](stats/stat_of_the_day.png?raw=true)
