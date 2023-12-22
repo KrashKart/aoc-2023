@@ -70,6 +70,9 @@ Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
     * Part 2 was devilishly difficult. I was stuck here as my code couldn't brute force fast enough. I had to take a hint from reddit yet again. u/charr3 provided the subreddit with a [function](https://www.reddit.com/r/adventofcode/comments/18nevo3/comment/keaiiq7/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) which allowed me to interpolate the number of tiles available. 7/10 improvement in programming skillz but 0/10 math skillz tbh
     * Also Part 2 was my first sub rank-1000!! Congrats to myself as I will never see this good of a result again :cry:
     * I decided to include the derivation of the function formula from [Newton's Forward Difference Interpolation Formula](https://en.wikipedia.org/wiki/Newton_polynomial) in the day 21 file too, over [here](day_21/derivation.jpg)
+22. [Sand Slabs](https://adventofcode.com/2023/day/22) (2/2 stars)
+    * This was a rather tricky one. I had to sit on it for a while before deciding which approach to take. u/Verulean314 [suggested](https://www.reddit.com/r/adventofcode/comments/18o7014/comment/kefiso9/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) to use a height map to store the highest point for each grid, which I managed to implement.
+    * Part 2 was just refactoring the part 1 code to count the number of falls. I actually read about this on the reddit before seeing Part 2 itself, so I kinda knew which modifications to make (oops)
 
 # Analysis of Times and Completion
 ![](stats/stat_of_the_day.png?raw=true)
