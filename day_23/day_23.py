@@ -1,4 +1,5 @@
 import sys
+from collections import defaultdict as dd
 sys.setrecursionlimit(1000000)
 FNAME = "day_23.txt"
 
@@ -41,38 +42,28 @@ def dfs(curr, visited, dist, part, g=None):
     return maxi
 
 def condense(grid):
-    g = dict()
-    v = set()
+    g = dd(list)
+    v = {(si, sj), (ei, ej)}
     for i in range(len(grid)):
         for j in range(len(grid[0])):
             if grid[i][j] != "#":
-                n_adj = len(list(nexts((i, j), 2)))
-                if n_adj > 2:
+                if len(list(nexts((i, j), 2))) > 2:
                     v.add((i, j))
 
-    v.add((si, sj))
-    v.add((ei, ej))
-
     for i, j in v:
-        q = []
-        q.append((i, j))
-        seen = {(i, j)}
-        dist = 0
+        q, visited, dist = [(i, j)], {(i, j)}, 0
         while q:
-            nq = []
+            nex = []
             dist += 1
             for c in q:
                 for a in nexts(c, 2):
-                    if a not in seen:
+                    if a not in visited:
                         if a in v:
-                            if (i, j) in g.keys():
-                                g[(i, j)].append((dist, a))
-                            else:
-                                g[(i, j)] = [(dist, a)]
+                            g[(i, j)].append((dist, a))
                         else:
-                            nq.append(a)
-                        seen.add(a)
-            q = nq
+                            nex.append(a)
+                        visited.add(a)
+            q = nex
     return g
 
 def part_1():
