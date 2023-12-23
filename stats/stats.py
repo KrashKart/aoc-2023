@@ -29,7 +29,7 @@ for ls in [one_rank, one_time, two_rank, two_time, two_stars_tots, add]:
     ls.reverse()
 
 # days where I did not start on time
-anomalies = [2, 5, 7, 8, 9, 11, 12, 13, 14, 16, 17, 19, 20]
+anomalies = [2, 5, 7, 8, 9, 11, 12, 13, 14, 16, 17, 19, 20, 23]
 
 # days where I did not finish
 DNF_2 = [10]
@@ -58,7 +58,7 @@ Y_MAX_0 = max(totals_adds)
 Y_MAX_1 = max(two_times)
 
 if PLOT:
-    fig, ax = plt.subplots(2, 1, figsize=(15, 10))
+    fig, ax = plt.subplots(2, 1, figsize=(15, 15))
     ax[0].plot(days, one_rank, "bo-", label="Part 1")
     ax[0].plot(days, two_rank, "ro-", label="Part 2")
     ax[0].plot(days, two_stars_tots, "g^--", label="Completion of Both Parts (Globally)")
