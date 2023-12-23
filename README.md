@@ -75,7 +75,7 @@ Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
     * Part 2 was just refactoring the part 1 code to count the number of falls. I actually read about this on the reddit before seeing Part 2 itself, so I kinda knew which modifications to make (oops)
 23. [A Long Walk](https://adventofcode.com/2023/day/23) (2/2 stars)
     * Part 1 was a rather standard DFS. The only caveat was that I had to raise the recursion limit as suggested by the AOC subreddit (I inititially thought my implementation was wrong) through the sys.setrecursionlimit, which was fun??
-    * u/nthistle [mentioned](https://www.reddit.com/r/adventofcode/comments/18oy4pc/comment/kekk8li/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) using weighted graphs to trim the number of tiles traversed, so I tried to implement it as best as I could with inspiration from u/nthistle's code. Not efficient, but gets the job done anyways...
+    * Brute-forcing for part 2 was not feasible for me. u/nthistle [mentioned](https://www.reddit.com/r/adventofcode/comments/18oy4pc/comment/kekk8li/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) condensing the grid into a weighted graph representing long stretches of consecutive, one-way tile corridors. This effectively reduces the number of tiles to check, so I tried to implement it as best as I could with inspiration from u/nthistle's code. Not efficient, but gets the job done anyways...
 
 # Analysis of Times and Completion
 ![](stats/stat_of_the_day.png?raw=true)
