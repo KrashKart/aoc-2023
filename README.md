@@ -1,6 +1,9 @@
 # Overview
 Hello, welcome to my AOC 2023 repo, where I post my solutions, problem data and test cases. I decided to challenge myself to complete the daily tasks to improve my coding skills and programmatic thinking.
 
+# Update as of 25/12/2023
+I am done with AOC 2023 (finally). This period of eagerly awaiting the daily puzzles has been quite an experience. I had a few commitments towards the end of December so it wasn't that fun anymore, but I'm definitely looking forward to AOC 2024 (and to potentially scoring my first 20 minute submission and rank 500)
+
 # What is AOC?
 For those unfamiliar, AOC is the Advent of Code, where in the style of an advent calendar, code challenges are released everyday at 1pm Singapore Time (midnight EST or UTC-5). A problem description and problem data (in the form of text) will be given, and the solution must be entered below the problem description. 
 
@@ -76,6 +79,12 @@ Huge thanks to the creator of AOC, [Eric Wastl](http://was.tl/).
 23. [A Long Walk](https://adventofcode.com/2023/day/23) (2/2 stars)
     * Part 1 was a rather standard DFS. The only caveat was that I had to raise the recursion limit as suggested by the AOC subreddit (I inititially thought my implementation was wrong) through the sys.setrecursionlimit, which was fun??
     * Brute-forcing for part 2 was not feasible for me. u/nthistle [mentioned](https://www.reddit.com/r/adventofcode/comments/18oy4pc/comment/kekk8li/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) condensing the grid into a weighted graph representing long stretches of consecutive, one-way tile corridors. This effectively reduces the number of tiles to check, so I tried to implement it as best as I could with inspiration from u/nthistle's code. Not efficient, but gets the job done anyways...
+24. [Never Tell Me The Odds](https://adventofcode.com/2023/day/24) (2/2 stars)
+    * Part 1 was alright, I simply converted both parametric equations to the form y = mx + c and solved for the intersection between both lines.
+    * Part 2 was killer. I did not solve this by my own and had to resort to looking at the subreddit for the answers. Frankly I'm still in the midst of understanding the solution...
+25. [Snowverload](https://adventofcode.com/2023/day/25) (2/2 stars)
+    * We reach the end!! Day 25 had only one problem concerning connected components and separating a graph into 2 subgraphs. Luckily for me I had experience with networkx from my internship days and used it to brute-force which 3 cuts to the graph produced 2 subgraphs.
+    * i help
 
 # Analysis of Times and Completion
 ![](stats/stat_of_the_day.png?raw=true)
