@@ -15,8 +15,8 @@ def intersect(hail1, hail2, low_bound, upp_bound):
     if m1 == m2:
         return False
     else:
-        x = -(vx1 * vx2 * (py1 - py2) + vx1 * vy2 * px2 - vx2 * vy1 * px1) / (vx2 * vy1 - vx1 * vy2)
-        y = -(vy1 * vy2 * (px1 - px2) + vy1 * vx2 * py2 - vy2 * vx1 * py1) / (vy2 * vx1 - vy1 * vx2)
+        x = (vx1 * vx2 * (py2 - py1) + vy1 * vx2 * px1 - vy2 * vx1 * px2) / (vy1 * vx2- vy2 * vx1)
+        y = (vy1 * vy2 * (px2 - px1) + vx1 * vy2 * py1 - vx2 * vy1 * py2) / (vx1 * vy2- vx2 * vy1)
         deltax1, deltax2, deltay1, deltay2 = x - px1, x - px2, y - py1, y - py2
         if not low_bound <= x <= upp_bound or not low_bound <= y <= upp_bound:
             return False
